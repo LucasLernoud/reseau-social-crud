@@ -7,8 +7,8 @@ const userSchema = new mongoose.Schema(
         pseudo: {
             type: String,
             required: true,
-            minlenght: 3,
-            maxlenght: 55,
+            minlength: 3,
+            maxlength: 55,
             unique: true,
             trim: true
         },
@@ -24,8 +24,8 @@ const userSchema = new mongoose.Schema(
         password: {
             type: String,
             required: true,
-            maxlenght: 1024,
-            minlenght: 6
+            maxlength: 1024,
+            minlength: 6
         },
         picture: {
             type: String,
